@@ -1,0 +1,167 @@
+.ensemble-video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 0;
+    height: 0;
+}
+
+.displaytitle {
+    padding-top: 40px;
+}
+
+.displaytitle.audiopreviewimageoff {
+    padding-top: 98px;
+}
+
+.displaysharing {
+    padding-top: 40px;
+}
+
+.displaysharing.audiopreviewimageoff {
+    padding-top: 98px;
+}
+
+.displayannotations {
+    padding-top: 40px;
+}
+
+.displayannotations.audiopreviewimageoff {
+    padding-top: 98px;
+}
+
+.displaycaptionsearch {
+    padding-top: 40px;
+}
+
+.displaycaptionsearch.audiopreviewimageoff {
+    padding-top: 98px;
+}
+
+.displaymetadata {
+    padding-top: 40px;
+}
+
+.displaymetadata.audiopreviewimageoff {
+    padding-top: 98px;
+}
+
+.displaydownloadicon {
+    padding-top: 40px;
+}
+
+.displaydownloadicon.audiopreviewimageoff {
+    padding-top: 98px;
+}
+
+.displaydateproduced {
+    padding-top: 40px;
+}
+
+.displaydateproduced.audiopreviewimageoff {
+    padding-top: 98px;
+}
+
+.displayattachments {
+    padding-top: 40px;
+}
+
+.displayattachments.audiopreviewimageoff {
+    padding-top: 98px;
+}
+
+.displayembedcode {
+    padding-top: 40px;
+}
+
+.displayembedcode.audiopreviewimageoff {
+    padding-top: 98px;
+}
+
+.displaylinks {
+    padding-top: 40px;
+}
+
+.displaylinks.audiopreviewimageoff {
+    padding-top: 98px;
+}
+
+.displayviewersreport {
+    padding-top: 40px;
+}
+
+.displayviewersreport.audiopreviewimageoff {
+    padding-top: 98px;
+}
+
+.audiopreviewimageoff{
+    padding-bottom: 13.25%;
+}
+
+.ensemble-playlist-wrapper {
+    position: relative;
+    padding-top: 0;
+    height: 0;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+}
+
+.ensemble-playlist-wrapper.horizontallistwithplayer {
+    position: relative;
+    padding-top: 0;
+    height: 0;
+    overflow: auto;
+    padding-bottom: 56.25%;
+    -webkit-overflow-scrolling: touch;
+}
+
+.ensemble-playlist-wrapper.horizontallist {
+    position: relative;
+    padding-bottom: 0;
+    padding-top: 300px;
+    height: 0;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.ensemble-playlist-wrapper.listwithplayer {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 400px;
+    height: 0;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.ensemble-playlist-wrapper.loop {
+    position: relative;
+    padding-bottom: 37.25%;
+    padding-top: 10px;
+    height: 0;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.ensemble-playlist-wrapper.showcase {
+    position: relative;
+    padding-bottom: 39%;
+    padding-top: 0;
+    height: 0;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch
+}
+
+.ensemble-dropbox-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.ensemble-quiz-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 0;
+    height: 0;
+    -webkit-overflow-scrolling: touch
+}
+
+

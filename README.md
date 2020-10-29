@@ -1,4 +1,4 @@
-## ev-wordpress-shortcode-plugin﻿
+## ev-wordpress-shortcode-plugin
 
 Thank you for downloading Ensemble Video’s Responsive Plugin!
  
