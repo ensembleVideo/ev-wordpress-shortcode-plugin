@@ -120,7 +120,7 @@ function get_iframe_playlist( $atts ) {
 	$output = '';
 
 	if ( $atts['embedtype'] === 'responsive' ) {
-		$output .= '<div id="pl-wrapper-' . $atts['id'] . '" class="ensemble-playlist-wrapper ' . $atts['layout'] . '">';
+		$output .= '<div id="pl-wrapper-' . $atts['id'] . '" class="ensemble-playlist-wrapper ' . strtolower($atts['layout']) . '">';
 	} else {
 		$output = '<div id="pl-wrapper-' . $atts['id'] . '" class="ensemble-playlist-wrapper" style="width:' . $atts["width"] . 'px; height:' . $atts["height"] . 'px;">';
 	}
@@ -134,7 +134,7 @@ function get_iframe_playlist( $atts ) {
 
 	$output .= '" frameborder="0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen=""></iframe>';
 	if ( $atts['embedtype'] === 'responsive' ) {
-		switch ($atts['layout']) {
+		switch (strtolower($atts['layout'])) {
 			case 'verticallistwithplayer':
 				$output .= '<script type="text/javascript">function handleResize() { var e = document.getElementById("' . $id . '"); if (null != e) { var i = e.getElementsByTagName("iframe")[0]; if (null != i) { e.style = "width: 100%; height: 100%;"; i.style = "width: 100%; height: 100%;"; var n = e.offsetWidth; e.style.height = n >= 822 ? 66.6 * n / 100 * .5625 + 15 + "px" : .5625 * n + 350 + "px" }}} handleResize(), window.onresize = function (e) { handleResize() };</script>';
 				break;

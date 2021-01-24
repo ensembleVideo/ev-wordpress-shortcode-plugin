@@ -3,7 +3,7 @@
 /*
 Plugin Name: Ensemble Video Responsive Plugin
 Description: Easily embed Ensemble Videos in your site. This version includes responsive embed codes and several embedding options.
-Version: 5.5.0
+Version: 5.6.1
 */
 
 
@@ -56,14 +56,13 @@ class Ensemble_Video {
 	}
 
 	function default_options() {
-		$defaults = array(
+		return array(
 			'ensemble_url'              => 'https://demo.ensemblevideo.com',
 			'ensemble_base_url'         => '',
 			'ensemble_institution_guid' => '',
 			'ensemble_version'          => '',
 			'ensemble_institution_name' => ''
 		);
-		return $defaults;
 	}
 
 	function enqueue_ensemble_styles() {
@@ -274,7 +273,7 @@ class Ensemble_Video {
 	 * @param $baseurl - the base url from the server
 	 * @param $brandingName - The branding name from the url
 	 *
-	 * @return
+	 * @returns the institution id
 	 * The branding guid from the server.
 	 */
 	function get_institution_guid( $baseurl, $brandingName ) {
@@ -303,7 +302,7 @@ class Ensemble_Video {
 	}
 
 	function admin_init() {
-		//  Debug can be truened on to see what is going on with the version and branding settings
+		//  Debug can be turned on to see what is going on with the version and branding settings
 		$debug = false;
 		register_setting( 'ensemble_video_options_group', 'ensemble_video', array( &$this, 'validate_options' ) );
 		add_settings_section( 'ensemble_video', 'General Settings', array(
